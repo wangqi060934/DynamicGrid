@@ -2,12 +2,17 @@ apply plugin: 'com.android.application'
 
 dependencies {
     compile project(':dynamicgrid')
-    compile 'com.android.support:support-v4:19.+'
+    compile 'com.android.support:support-v4:25.0.1'
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion 25
+    buildToolsVersion "25"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+    }
 
     sourceSets {
         main {
